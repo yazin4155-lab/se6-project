@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <p>Fill out the form below to apply for a job.</p>
+
+    <form>
+        <fieldset>
+            <legend>Applicant Details</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="date">Preferred Interview Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="time">Preferred Interview Time:</label>
+            <input type="time" id="time" name="time" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label for="position">Which position are you applying for?</label>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option value="sales_assistant">Sales Assistant</option>
+                <option value="customer_service">Customer Service Representative</option>
+                <option value="office_assistant">Office Assistant</option>
+            </select>
+            <br><br>
+
+            <label for="message">Tell us a little about yourself:</label><br>
+            <textarea id="message" name="message" rows="4" cols="35"
+                placeholder="Tell us about your skills and experience..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Days You Can Interview</legend>
+
+            <input type="checkbox" id="monday" name="day" value="monday">
+            <label for="monday">Monday</label><br>
+
+            <input type="checkbox" id="tuesday" name="day" value="tuesday">
+            <label for="tuesday">Tuesday</label><br>
+
+            <input type="checkbox" id="wednesday" name="day" value="wednesday">
+            <label for="wednesday">Wednesday</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Employment Type</legend>
+
+            <input type="radio" id="full_time" name="employment_type" value="full_time" required>
+            <label for="full_time">Full-time</label><br>
+
+            <input type="radio" id="part_time" name="employment_type" value="part_time">
+            <label for="part_time">Part-time</label><br>
+
+            <input type="radio" id="internship" name="employment_type" value="internship">
+            <label for="internship">Internship</label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
